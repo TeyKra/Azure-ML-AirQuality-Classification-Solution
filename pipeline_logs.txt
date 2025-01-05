@@ -1,0 +1,65 @@
+(azureml_py38) azureuser@air-quality-instance-v2:~/cloudfiles/code/Users/edwin.savory$ python data_exploration_to_deployment.py 
+Found the config file in: /config.json
+conda.yaml file created: conda.yaml
+Custom environment 'custom-mlflow-env' with version '5.0' created successfully.
+Classes: ['Good' 'Hazardous' 'Moderate' 'Poor']
+[I 2025-01-03 18:44:34,379] A new study created in memory with name: no-name-6f7ec6b2-4d4e-48a8-aa69-e9c30fa9ff70
+[I 2025-01-03 18:44:36,109] Trial 0 finished with value: 0.9540019937518113 and parameters: {'model': 'Random Forest', 'n_estimators': 102, 'max_depth': 27}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:48:00,392] Trial 1 finished with value: 0.9407499925956002 and parameters: {'model': 'SVC', 'C': 5.576211952628831, 'kernel': 'linear'}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:48:01,485] Trial 2 finished with value: 0.9515017435018426 and parameters: {'model': 'Random Forest', 'n_estimators': 65, 'max_depth': 33}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:48:03,130] Trial 3 finished with value: 0.9535020561737136 and parameters: {'model': 'Random Forest', 'n_estimators': 98, 'max_depth': 33}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:48:16,883] Trial 4 finished with value: 0.9480010557361979 and parameters: {'model': 'Gradient Boosting', 'learning_rate': 0.16822841938128938, 'n_estimators': 180}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:48:17,887] Trial 5 finished with value: 0.9520018685331003 and parameters: {'model': 'Random Forest', 'n_estimators': 60, 'max_depth': 42}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:48:28,796] Trial 6 finished with value: 0.9482514931581472 and parameters: {'model': 'Gradient Boosting', 'learning_rate': 0.20113111983054827, 'n_estimators': 143}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:50:16,298] Trial 7 finished with value: 0.9420001177205846 and parameters: {'model': 'SVC', 'C': 1.671897482967909, 'kernel': 'linear'}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:50:27,656] Trial 8 finished with value: 0.9512513060798934 and parameters: {'model': 'Gradient Boosting', 'learning_rate': 0.07132090781149708, 'n_estimators': 149}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:50:29,136] Trial 9 finished with value: 0.8447479186138365 and parameters: {'model': 'Logistic Regression', 'C': 3.5146738859522766}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:50:29,268] Trial 10 finished with value: 0.7792469106781943 and parameters: {'model': 'K-Nearest Neighbors', 'n_neighbors': 9}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:50:30,896] Trial 11 finished with value: 0.9527522435331471 and parameters: {'model': 'Random Forest', 'n_estimators': 98, 'max_depth': 15}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:50:32,544] Trial 12 finished with value: 0.9537519312361824 and parameters: {'model': 'Random Forest', 'n_estimators': 98, 'max_depth': 23}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:50:34,257] Trial 13 finished with value: 0.9527518686268269 and parameters: {'model': 'Random Forest', 'n_estimators': 103, 'max_depth': 18}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:50:34,380] Trial 14 finished with value: 0.7902494739127061 and parameters: {'model': 'K-Nearest Neighbors', 'n_neighbors': 3}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:50:35,842] Trial 15 finished with value: 0.8467472940199068 and parameters: {'model': 'Logistic Regression', 'C': 9.91727935943908}. Best is trial 0 with value: 0.9540019937518113.
+[I 2025-01-03 18:50:37,797] Trial 16 finished with value: 0.9542522437206004 and parameters: {'model': 'Random Forest', 'n_estimators': 117, 'max_depth': 24}. Best is trial 16 with value: 0.9542522437206004.
+[I 2025-01-03 18:50:39,482] Trial 17 finished with value: 0.9507513685017956 and parameters: {'model': 'Random Forest', 'n_estimators': 122, 'max_depth': 8}. Best is trial 16 with value: 0.9542522437206004.
+[I 2025-01-03 18:50:41,641] Trial 18 finished with value: 0.9550018689080066 and parameters: {'model': 'Random Forest', 'n_estimators': 130, 'max_depth': 28}. Best is trial 18 with value: 0.9550018689080066.
+[I 2025-01-03 18:50:43,136] Trial 19 finished with value: 0.846000855536223 and parameters: {'model': 'Logistic Regression', 'C': 9.810396865551294}. Best is trial 18 with value: 0.9550018689080066.
+Best model parameters: {'model': 'Random Forest', 'n_estimators': 130, 'max_depth': 28}
+Training Metrics by Class:
+              precision    recall  f1-score   support
+
+     Class 0       1.00      1.00      1.00      1591
+     Class 1       1.00      1.00      1.00       389
+     Class 2       1.00      1.00      1.00      1206
+     Class 3       1.00      1.00      1.00       814
+
+    accuracy                           1.00      4000
+   macro avg       1.00      1.00      1.00      4000
+weighted avg       1.00      1.00      1.00      4000
+
+Testing Metrics by Class:
+              precision    recall  f1-score   support
+
+     Class 0       1.00      1.00      1.00       409
+     Class 1       0.93      0.89      0.91       111
+     Class 2       0.97      0.97      0.97       294
+     Class 3       0.89      0.91      0.90       186
+
+    accuracy                           0.96      1000
+   macro avg       0.95      0.94      0.94      1000
+weighted avg       0.96      0.96      0.96      1000
+
+2025/01/03 18:50:55 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
+2025/01/03 18:50:55 INFO mlflow.tracking._tracking_service.client: 🏃 View run zen_school_y6m2kwzg at: https://westeurope.api.azureml.ms/mlflow/v2.0/subscriptions/63d64c73-ea7e-48d8-a711-44ad3926844b/resourceGroups/air-quality-project/providers/Microsoft.MachineLearningServices/workspaces/airqualityml/#/experiments/56fbfc85-1b39-4bf7-99cd-036cfd5c581f/runs/7b286c83-bc5c-4c7e-ac65-98f760698b4e.
+2025/01/03 18:50:55 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: https://westeurope.api.azureml.ms/mlflow/v2.0/subscriptions/63d64c73-ea7e-48d8-a711-44ad3926844b/resourceGroups/air-quality-project/providers/Microsoft.MachineLearningServices/workspaces/airqualityml/#/experiments/56fbfc85-1b39-4bf7-99cd-036cfd5c581f.
+Model registered with name=random_forest, version=1
+Endpoint name: air-quality-endpoint-mrw2
+Check: endpoint air-quality-endpoint-mrw2 exists
+Uploading edwin.savory (69.24 MBs): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 69235424/69235424 [00:00<00:00, 84742599.86it/s]
+
+
+.................................................................................Deployment created: air-quality-endpoint-mrw2
+Traffic updated: {'blue': 100}
+Check: endpoint air-quality-endpoint-mrw2 exists
+...........................................Application Insights enabled for deployment 'blue'.
+Deployment completed at endpoint: air-quality-endpoint-mrw2
