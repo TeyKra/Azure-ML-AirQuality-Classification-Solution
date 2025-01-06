@@ -1,0 +1,15 @@
+mltable
+azure-ai-ml
+azure-identity
+opencensus-ext-azure
+joblib
+optuna
+mlflow
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+scikit-learn
+streamlit
+requests
