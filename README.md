@@ -5,11 +5,6 @@ This project addresses a classification problem related to air quality. It demon
 
 ---
 
-## Video Presentation
-Watch the video presentation of this project for a detailed walkthrough: [YouTube Video Link](https://youtu.be/your_unlisted_video_link)
-
----
-
 ## Key Features
 1. **Data Exploration and Preprocessing**
    - Dataset sourced from public platforms like Kaggle or UCI.
